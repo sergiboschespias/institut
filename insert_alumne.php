@@ -7,8 +7,8 @@
       <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
     </svg></a>
 </header>
+<body style="background-color:LightCyan;">
 
-<body>
 
   <form action="insert_api_alumne.php" method="POST">
 
@@ -37,9 +37,17 @@
       <input type="text" maxlength="100" required name="naixament" placeholder="Escriu aqui la teva data de naixament" />
     </div>
     <div>
-      <select name="alumne">
-        <option value="1">Fp Grau Mitjá</option>
-        <option value="2">Fp Grau Basic</option>
+     
+      <select name="Curs">
+      <option value="1">1r ESO</option>
+      <option value="2">2n ESO</option>
+      <option value="3">3r ESO</option>
+      <option value="4">4t ESO</option>
+      <option value="5">1r Bach</option>
+      <option value="6">2n Bach</option>
+      <option value="7">FP Basic</option>
+      <option value="8">FP Mitja</option>
+      </select>
     </div>
 
 
@@ -47,7 +55,7 @@
     <button type="submit"><b>enviar</b></button>
     <select name="IDCurs">
       <?php
-      $query = "SELECT IDCurs, subgrup FROM curs ORDER BY subgrup";
+      $query = "SELECT IDCurs, Nom_curs FROM curs ORDER BY IDCurs";
       $result = mysqli_query($bbdd, $query);
       while ($row = mysqli_fetch_assoc($result)) {
         echo "<option value=\"$row[IDCurs]\">$row[subgrup]</option>";

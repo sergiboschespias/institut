@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="styles/style.css" />
 
 <body>
-
+<body style="background-color:LightCyan;">
+</body>
    <header>
 
       <a href="index.php"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
@@ -15,10 +16,16 @@
 
    <form action="llista_alumne.php" method="get">
       <label>Filtrar:</label>
-      <select name="alumne">
-         <option value="1">Fp Grau Mitjá</option>
-         <option value="2">Fp Grau Basic</option>
-
+      <select name="curs">
+         <option value="0">Tots els cursos</option>
+         <option value="1">1 ESO</option>
+         <option value="2">2 ESO</option>
+         <option value="3">3 ESO</option>
+         <option value="4">4 ESO</option>
+         <option value="5">1r Bach</option>
+         <option value="6">2n Bach</option></option>
+         <option value="7">FP Grau Bàsic</option>
+         <option value="8">FP Grau Mitja</option>
       </select>
       <button type="submit">Filtrar</button>
    </form>
@@ -40,10 +47,15 @@
       </thead>
       <tbody>
          <?php
-         $query = "SELECT al.*,c.Nom_curs AS Nom_curs FROM alumne AS al
-    INNER JOIN curs AS c ON (al.IDCurs = c.IDCurs)
+         $where = "";
+         if(isset($_GET['curs']) && $_GET['curs'] > 0){
+           $where= " where c.IDCurs= $_GET[curs] ";
+         }
 
-    ORDER BY al.nombre ";
+         $query = "SELECT al.*,c.Nom_curs AS Nom_curs FROM alumne AS al
+                    INNER JOIN curs AS c ON (al.IDCurs = c.IDCurs)
+                    $where 
+                     ORDER BY al.nombre ";
          $result = mysqli_query($bbdd, $query);
          while ($row = mysqli_fetch_assoc($result)) {
             echo "
