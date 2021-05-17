@@ -53,7 +53,7 @@
 
 
     <button type="submit"><b>enviar</b></button>
-    <select name="IDCurs">
+    <!--select name="IDCurs">
       <?php
       $query = "SELECT IDCurs, Nom_curs FROM curs ORDER BY IDCurs";
       $result = mysqli_query($bbdd, $query);
@@ -61,7 +61,7 @@
         echo "<option value=\"$row[IDCurs]\">$row[subgrup]</option>";
       }
       ?>
-    </select>
+    </select-->
 
   </form>
 </body>

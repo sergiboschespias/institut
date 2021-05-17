@@ -17,29 +17,18 @@
 
 <body style="background-color:Cornsilk;">
     <div style="width: 100%; text-align: center">
+<?php
+    $query = "SELECT * FROM alumne WHERE DNI = '$_GET[dni]'  ";
+    $result = mysqli_query($bbdd, $query);
+    $alumne = mysqli_fetch_assoc($result);
+?>
+
         <h1>
             <i>
-                Es Liceu
+               Nom alumne: <?php echo $alumne['nombre'] . ' ' . $alumne['cognom']; ?>
             </i>
         </h1>
 
-
-        <p>
-            Bon dia , estas en la pàgina web del colegi <b>Es Liceu</b> aqui podras
-            cercar informacio els alumnes del liceu.
-        </p>
-        <p>
-            En la nova web diseñada per <i>Sergi Bosch i Jordi Mayrata</i> volem una millor estructura de les dades i
-            una millor accesibilitat als alumnes.Gràcies.
-        </p>
-        <p>
-            <a class="btn btn-primary" href="llista_alumne.php"> Alumnes</a>
-        </p>
-        <p>
-            <a class="btn btn-primary" href="insert_alumne.php"> Nous alumnes </a>
-        </p>
-
-        <img src="imagenes/claase.jpg" wdith="300ph" />
 
     </div>
 </body>
