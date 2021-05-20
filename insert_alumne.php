@@ -8,16 +8,15 @@
     </svg></a>
 </header>
 <body style="background-color:LightCyan;">
+<div style="width: 100%; text-align: center">
+
 
 
   <form action="insert_api_alumne.php" method="POST">
 
     <h1>Inscripció nous alumnes FP</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
-    <div>
-      <label><b>DNI</b></label>
-      <input type="text" maxlength="150" required name="DNI" placeholder="Escriu aqui el teu DNI" />
-    </div>
+  
     <label><b> Nom </b></label>
     <input type="text" maxlength="120" required name="nombre_alumne" placeholder="Escriu aqui el teu nom" />
 
@@ -37,7 +36,9 @@
       <input type="text" maxlength="100" required name="naixament" placeholder="Escriu aqui la teva data de naixament" />
     </div>
     <div>
-     
+    <label><b>DNI</b></label>
+      <input type="text" maxlength="150" required name="DNI" placeholder="Escriu aqui el teu DNI" />
+    <label><b>Curs</b></label>
       <select name="Curs">
       <option value="1">1r ESO</option>
       <option value="2">2n ESO</option>
@@ -64,6 +65,9 @@
     </select-->
 
   </form>
+  <div style="width: 100%; text-align: center" >
+        <img src="imagenes/claase.jpg" wdith="300ph" />
+        </div>
 </body>
 
 

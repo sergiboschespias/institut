@@ -1,8 +1,7 @@
 
 
 <p>
-
-ELIMINAT de por VIDA
+ELIMINAT CORRECTAMENT
 
 
 

@@ -26,7 +26,7 @@
 
         <p>
             Bon dia , estas en la pàgina web del colegi <b>Es Liceu</b> aqui podras
-            cercar informacio els alumnes del liceu.
+            cercar informacio sobre el centre i els alumnes del liceu.
         </p>
         <p>
             En la nova web diseñada per <i>Sergi Bosch i Jordi Mayrata</i> volem una millor estructura de les dades i
@@ -38,10 +38,14 @@
         <p>
             <a class="btn btn-primary" href="insert_alumne.php"> Nous alumnes </a>
         </p>
-
+        <p>
+            <a class="btn btn-primary" href="aula.php"> Aules</a>
+        </p>
+        </div>
+        <div style="width: 100%; text-align: center">
         <img src="imagenes/claase.jpg" wdith="300ph" />
-
-    </div>
+        </div>
+    
 </body>
 
 </html>

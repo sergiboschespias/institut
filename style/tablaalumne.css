@@ -1,0 +1,33 @@
+/*
+Estilo para la tabla de alumnes
+*/
+h1{
+    text-align: center;
+}
+p{
+    margin-top: 20px;
+}
+label{
+    margin-top: 50px;
+
+}
+table{
+    margin-top: 30px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right: auto;
+}
+caption{
+    padding-top: 20px;
+    font-style: italic;
+    margin-top: 10px;
+
+
+}
+td,th{
+    border: 2px solid rgb(31, 6, 255);
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
