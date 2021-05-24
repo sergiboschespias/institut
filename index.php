@@ -45,7 +45,7 @@
             <a class="btn btn-primary" href="llista_profesor.php"> Profesors</a>
         </p>
         <p>
-            <a class="btn btn-primary" href="insert_profesor.php">  Nous Profesors</a>
+            <a class="btn btn-primary" href="insert_api_profesor.php"> Nous profesors</a>
         </p>
         
         
