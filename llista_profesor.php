@@ -16,8 +16,8 @@
 <body style="background-color:LightCyan;">
 <div style="width: 100%; text-align: center">
 
-<h1>Distribució de les aules del centre.  <img src="imagenes/claase.jpg" wdith="100ph" style="width: 10%"; text-align: right /></h1>
-<p>Aqui podreu cercar la ubicaió de l'aula que cercau en els diferents blocs que te el center</p>
+<h1>Llista de profesors del centre.  <img src="imagenes/claase.jpg" wdith="100ph" style="width: 10%"; text-align: right /></h1>
+<p>Aqui podreu trobar tots els profesors que fan feine en el centre</p>
 
    <label >introduce tu DNI</label>
 <input list="DNI">
@@ -47,19 +47,22 @@
             $where= " where au.bloque= $_GET[bloc] ";
           }
  
-          $query = "SELECT au.*  FROM aula  AS au " . $where ;
-                    
+          $query = "SELECT pro.*  FROM profesor AS pro
+          ORDER BY DNI";    
           $result = mysqli_query($bbdd, $query);
           while ($row = mysqli_fetch_assoc($result)) {
-             echo "
-        <tr>
-        <td> $row[bloque]</td>
-        <td> $row[numero]</td>
-
-        </tr>
-       ";
+          
+          echo "
+          <tr>
+          <td> $row[DNI]</td>
+          <td> $row[nombre]</td>
+          <td> $row[cognom]</td>
+          <td> $row[adreca]</td>
+          <td> $row[telefon]</td>
+          <td><a href=\"delete_api_profesor.php?DNI=$row[DNI]\">eliminar</a></td>
+          </tr>
+         ";
           }
-         
          
          ?>
 </tbody>

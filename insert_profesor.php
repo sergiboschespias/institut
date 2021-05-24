@@ -18,11 +18,11 @@
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
     <div>
     <label><b> Nom </b></label>
-    <input type="text" maxlength="120" required name="nombre_alumne" placeholder="Escriu aqui el teu nom" />
+    <input type="text" maxlength="120" required name="nombre_profesor" placeholder="Escriu aqui el teu nom" />
     </div>
     <div>
     <label><b>Cognom</b></label>
-    <input type="text" maxlength="100" required name="cognom_alumne" placeholder="Escriu aqui el teu cognom" />
+    <input type="text" maxlength="100" required name="cognom_profesor" placeholder="Escriu aqui el teu cognom" />
     </div>
     <div>
       <label><b>Adreça</b></label>
@@ -45,7 +45,6 @@
       $query = "SELECT * FROM profesor ORDER BY DNI";
       $result = mysqli_query($bbdd, $query);
       while ($row = mysqli_fetch_assoc($result)) {
-        echo "<option value=\"$row[DNI]\">$row[subgrup]</option>";
       }
       ?>
     </select-->
