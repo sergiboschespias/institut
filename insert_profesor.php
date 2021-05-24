@@ -33,7 +33,7 @@
       <input type="text" maxlength="100" required name="telefon" placeholder="Escriu aqui el teu telefon" />
     </div>
     <div>
-    <label><b>DNI</b></label>
+    <label><b>dni</b></label>
       <input type="text" maxlength="150" required name="DNI" placeholder="Escriu aqui el teu DNI" />
     </div>
 
