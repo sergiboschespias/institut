@@ -14,14 +14,16 @@
 
   <form action="insert_api_alumne.php" method="POST">
 
-    <h1>Inscripció nous alumnes FP</h1>
+    <h1>Inscripció nous professors</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
-  
+    <div>
     <label><b> Nom </b></label>
     <input type="text" maxlength="120" required name="nombre_alumne" placeholder="Escriu aqui el teu nom" />
-
+    </div>
+    <div>
     <label><b>Cognom</b></label>
     <input type="text" maxlength="100" required name="cognom_alumne" placeholder="Escriu aqui el teu cognom" />
+    </div>
     <div>
       <label><b>Adreça</b></label>
       <input type="text" maxlength="100" required name="adreca" placeholder="Escriu aqui la teva adreça" />
