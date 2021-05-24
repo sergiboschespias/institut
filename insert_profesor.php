@@ -12,7 +12,7 @@
 
 
 
-  <form action="insert_api_alumne.php" method="POST">
+  <form action="insert_api_profesor.php" method="POST">
 
     <h1>Inscripció nous alumnes FP</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>

@@ -42,10 +42,10 @@
             <a class="btn btn-primary" href="aula.php"> Aules</a>
         </p>
         <p>
-            <a class="btn btn-primaty" href="llista_profesor.php"> Profesors</a>
+            <a class="btn btn-primary" href="llista_profesor.php"> Profesors</a>
         </p>
         <p>
-            <a class="btn btn-primaty" href="insert_profesor.php"> Nous Profesors</a>
+            <a class="btn btn-primary" href="insert_api_profesor.php"> Nous profesors</a>
         </p>
         </div>
         <div style="width: 100%; text-align: center">
