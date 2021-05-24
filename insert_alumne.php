@@ -53,7 +53,7 @@
 
 
 
-    <button type="submit" href="v_inscripcio.php"><b>enviar</b></button>
+    <a type="submit" href="v_inscripcio.php" ><b>enviar</b></a>
     <!--select name="IDCurs">
       <?php
       $query = "SELECT IDCurs, Nom_curs FROM curs ORDER BY IDCurs";
