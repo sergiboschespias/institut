@@ -17,23 +17,33 @@
     <h1>Inscripció nous professors</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
     <div>
-    <label><b> Nom </b></label>
+    <label><b> Nom (*obligatori)</b></label>
+    </div>
+    <div>
     <input type="text" maxlength="120" required name="nombre_profesor" placeholder="Escriu aqui el teu nom" />
     </div>
     <div>
-    <label><b>Cognom</b></label>
+    <label><b>Cognom (*obligatori)</b></label>
+    </div>
+    <div>
     <input type="text" maxlength="100" required name="cognom_profesor" placeholder="Escriu aqui el teu cognom" />
     </div>
     <div>
-      <label><b>Adreça</b></label>
+      <label><b>Adreça (*obligatori)</b></label>
+      </div>
+    <div>
       <input type="text" maxlength="100" required name="adreca" placeholder="Escriu aqui la teva adreça" />
     </div>
     <div>
-      <label><b>telefon</b></label>
+      <label><b>telefon (*obligatori)</b></label>
+      </div>
+    <div>
       <input type="text" maxlength="100" required name="telefon" placeholder="Escriu aqui el teu telefon" />
     </div>
     <div>
-    <label><b>dni</b></label>
+    <label><b>dni (*obligatori)</b></label>
+    </div>
+    <div>
       <input type="text" maxlength="150" required name="DNI" placeholder="Escriu aqui el teu DNI" />
     </div>
 
