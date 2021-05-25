@@ -18,9 +18,9 @@
 
 <h1>Llista de profesors del centre.  <img src="imagenes/claase.jpg" wdith="100ph" style="width: 10%"; text-align: right /></h1>
 <p>Aqui podreu trobar tots els profesors que fan feine en el centre</p>
-
+<form>
    <label >introduce tu DNI</label>
-<input list="DNI">
+<input list="DNI" name="DNI">
 <datalist id="DNI">
     
 </datalist>
@@ -43,11 +43,9 @@
 <tbody>
          <?php
          $where = "";
-         if(isset($_GET['profesor']) && $_GET['profesor'] > 0){
-            
-          }
+         if(isset($_GET['DNI']));
  
-          $query = "SELECT *  FROM profesor AS pro
+          $query = "SELECT * FROM profesor
           ORDER BY DNI";    
           $result = mysqli_query($bbdd, $query);
           while ($row = mysqli_fetch_assoc($result)) {
