@@ -20,11 +20,27 @@
 <p>Aqui podreu trobar tots els profesors que fan feine en el centre</p>
 <form>
    <label >introduce tu DNI</label>
+<<<<<<< HEAD
 <input list="DNI" name="DNI">
 <datalist id="DNI">
     
+=======
+<input list="brow">
+<datalist id="brow">
+
+<?php 
+   $query = "SELECT DNI FROM profesor AS pr ORDER BY DNI;";
+   $result = mysqli_query($bbdd, $query) or die (mysqli_error($bbdd));
+   while($row = mysqli_fetch_assoc($result)){
+         echo "<opiton value=\"$row[DNI]\">$row[DNI]</option>";
+
+   }
+   ?>
+
+>>>>>>> master
 </datalist>
-      <button type="submit">Filtrar</button>
+
+      
    
       
 </form>
@@ -43,12 +59,23 @@
 <tbody>
          <?php
          $where = "";
+<<<<<<< HEAD
          if(isset($_GET['DNI']));
  
           $query = "SELECT * FROM profesor
           ORDER BY DNI";    
+=======
+         if(isset($_GET['profesor']) && $_GET['profesor'] > 0){
+            $where= " where DNI=\"$_GET[DNI]\" " or die (mysqli_error($bbdd));
+          }
+          ?>
+ <button type="submit">Filtrar</button>
+ <?php
+          $query= "SELECT *  FROM profesor 
+          $where ORDER BY DNI";    
+>>>>>>> master
           $result = mysqli_query($bbdd, $query);
-          while ($row = mysqli_fetch_assoc($result)) {
+          while ($row=mysqli_fetch_assoc($result)) {
           
           echo "
           <tr>

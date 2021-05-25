@@ -47,7 +47,22 @@
         <p>
             <a class="btn btn-primary" href="insert_profesor.php"> Nous profesors</a>
         </p>
-        
+        <p>
+        <!--
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="alumne">News</a></li>
+            <li class="">
+              <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+             <div class="dropdown-content">
+             <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              </div>
+             </li>
+            </ul>
+            -->
+        </p>
         
         </div>
         <div style="width: 100%; text-align: center">
