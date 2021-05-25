@@ -44,10 +44,10 @@
          <?php
          $where = "";
          if(isset($_GET['profesor']) && $_GET['profesor'] > 0){
-            $where= " where au.bloque= $_GET[bloc] ";
+            
           }
  
-          $query = "SELECT pro.*  FROM profesor AS pro
+          $query = "SELECT *  FROM profesor AS pro
           ORDER BY DNI";    
           $result = mysqli_query($bbdd, $query);
           while ($row = mysqli_fetch_assoc($result)) {
