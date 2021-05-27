@@ -22,6 +22,10 @@
    <label >introduce tu DNI</label>
 <input list="DNI" name="DNI">
 <datalist id="DNI">
+<<<<<<< HEAD
+=======
+   
+>>>>>>> sergi
 <?php 
    $query = "SELECT DNI FROM profesor AS pr ORDER BY DNI;";
    $result = mysqli_query($bbdd, $query) or die (mysqli_error($bbdd));
@@ -32,8 +36,15 @@
    ?>
 
 </datalist>
+<<<<<<< HEAD
 
 <button type="submit">Filtrar</button>
+=======
+<button>Filtrar</button>
+      
+   
+      
+>>>>>>> sergi
 </form>
 <table>
 <caption>Aquesta taula esta feta per els profesors del centre.</caption>
@@ -51,11 +62,19 @@
          <?php
          $where = "";
          if(isset($_GET['DNI'])){
+<<<<<<< HEAD
             $where= " where DNI=\"$_GET[DNI]\" ";
          }
           $query= "SELECT *  FROM profesor $where ORDER BY DNI";    
+=======
+            $where="where DNI=\"$GET[DNI]\" " or die (mysqli_error($bbdd));
+         }
+         
+          $query = "SELECT * FROM profesor ORDER BY DNI";    
+>>>>>>> sergi
           $result = mysqli_query($bbdd, $query);
           while ($row=mysqli_fetch_assoc($result)) {
+          
           echo "
           <tr>
           <td> $row[DNI]</td>
@@ -68,7 +87,11 @@
          ";
           }
          
+<<<<<<< HEAD
           ?>
+=======
+    ?>
+>>>>>>> sergi
 </tbody>
 
        
@@ -77,4 +100,5 @@
 
 </div>
 </body>
+
 </html>

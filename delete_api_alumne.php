@@ -1,3 +1,4 @@
+<?php require "includes/head.php"; ?>
 <?php
 require "includes/mysql.php";
 $query = "DELETE FROM alumne WHERE DNI=\"$_GET[DNI]\" ";
