@@ -51,10 +51,10 @@
          <?php
          $where = "";
          if(isset($_GET['DNI'])){
-            $where= " where DNI=\"$_GET[DNI]\" " or die (mysqli_error($bbdd));
+            $where= " where DNI=\"$_GET[DNI]\" ";
          }
-          $query= "SELECT *  FROM profesor ORDER BY DNI";    
-          $result = mysqli_query($bbdd, $query);
+          $query= "SELECT *  FROM profesor $where ORDER BY DNI";    
+          $result = mysqli_query($bbdd, $query) or die (mysqli_error($bbdd));
           while ($row=mysqli_fetch_assoc($result)) {
           echo "
           <tr>
