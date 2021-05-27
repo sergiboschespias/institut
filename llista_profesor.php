@@ -22,7 +22,6 @@
    <label >introduce tu DNI</label>
 <input list="DNI" name="DNI">
 <datalist id="DNI">
-
 <?php 
    $query = "SELECT DNI FROM profesor AS pr ORDER BY DNI;";
    $result = mysqli_query($bbdd, $query) or die (mysqli_error($bbdd));
