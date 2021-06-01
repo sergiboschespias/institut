@@ -27,7 +27,10 @@
                 echo"no ha anat be";
                 print(mysqli_error($bbdd));
             }
+            else {
+                header("Location: v_inscripcio.php");
 
+            }
         ?>
     </body>
 

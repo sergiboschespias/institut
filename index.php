@@ -3,18 +3,6 @@
 <?php require "includes/head.php"; ?>
 <?php require "includes/header.php"; ?>
 
-    <head>
-        <meta charset="utf-8">
-        <style>
-            td {
-              border: 1px solid;
-            }
-        </style>
-        <title>Titol de sa pagina</title>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    </head>
-
     <body style="background-color:Cornsilk;">
         <div style="width: 100%; text-align: center">
             <h1>
@@ -48,20 +36,9 @@
             <a class="btn btn-primary" href="insert_profesor.php"> Nous profesors</a>
         </p>
         <p>
-        <!--
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="alumne">News</a></li>
-            <li class="">
-              <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-             <div class="dropdown-content">
-             <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              </div>
-             </li>
-            </ul>
-            -->
+        
+        
+           
         </p>
         
         </div>
