@@ -54,10 +54,15 @@
     <div>
       <label><b>telefon</b></label>
       <input type="text" maxlength="100" value="<?=$telefon?>" required name="telefon" placeholder="Escriu aqui el teu telefon" />
-
-      
-      <input type="text" maxlength="100" value="<?=$naixament?>" required name="naixament" placeholder="Escriu aqui la teva data de naixament" />
     </div>
+    
+    
+    <label><b>naixament:</b></label>
+
+     <input type="date" name="naixament"
+       value="2018-07-22"
+       min="1900-01-01" max="2090-12-31">
+     
     <div>
       <label><b>DNI</b></label>
       <input type="text" maxlength="150" value="<?=$DNI?>"required name="DNI" placeholder="Escriu aqui el teu DNI" />
