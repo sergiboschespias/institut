@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require "includes/head.php"; ?>
-    <head>
-     
-        
-        <title>Document</title>
-    </head>
+<?php require "includes/header.php"; ?>
     <body> 
 
         
         </a>
         <body style="background-color:LightCyan;" >
         <p>
-            <b>ELIMINAT CORRECTAMENT</b>
+            <b><h1>¡PERFECTE! A sortit tot bé</h1></b>
         </p> 
 
     </body>

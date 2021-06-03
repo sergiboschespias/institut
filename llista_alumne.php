@@ -44,6 +44,7 @@
             <th>telèfon</th>
             <th>naixament</th>
             <th>Curs</th>
+            <th>Imatge</th>
             <th>Opcions</th>
          </tr>
       </thead>
@@ -70,6 +71,7 @@
        <td> $row[telefon]</td>
        <td> $row[naixament]</td>
        <td> $row[IDCurs]</td>
+       <td> <img src=\"imagenes/alumnes/$row[imatgeAlumne]\" width=\"100px\" /></td>
        <td><a href=\"delete_api_alumne.php?DNI=$row[DNI]\">eliminar</a></td>
        <td><a href=\"insert_alumne.php?DNI=$row[DNI]\">editar</a></td>
 

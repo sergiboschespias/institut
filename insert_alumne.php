@@ -18,6 +18,7 @@
     $naixament = '';
     $telefon = '';
     
+    
 
     if(isset($_GET['DNI'])){
       $query = "SELECT * from alumne WHERE DNI = $_GET[DNI]";
@@ -35,16 +36,16 @@
     }
     ?>
 
-    <form action="<?=(isset($_GET['DNI'])) ? "update_api_alumne.php?DNI=$_GET[DNI]" : 'insert_api_alumne.php'?>"  method="POST">
+    <form action="<?=(isset($_GET['DNI'])) ? "update_api_alumne.php?DNI=$_GET[DNI]" : 'insert_api_alumne.php'?>"  method="POST" enctype="multipart/form-data">
 
     <h1>Inscripció nous alumnes FP</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
   
     <label><b> Nom </b></label>
-    <input type="text" maxlength="120" value="<?=$nombre?>" required name="nombre_alumne" placeholder="Escriu aqui el teu nom" />
+    <input type="text" maxlength="120" value="<?=$nombre?>" required name="nombre" placeholder="Escriu aqui el teu nom" />
 
     <label><b>Cognom</b></label>
-    <input type="text" maxlength="100" value="<?=$cognom?>" required name="cognom_alumne" placeholder="Escriu aqui el teu cognom" />
+    <input type="text" maxlength="100" value="<?=$cognom?>" required name="cognom" placeholder="Escriu aqui el teu cognom" />
     <div>
       <label><b>Adreça</b></label>
       <input type="text" maxlength="100" value="<?=$adreca?>" required name="adreca" placeholder="Escriu aqui la teva adreça" />
@@ -77,6 +78,10 @@
         <option value="7">FP Basic</option>
         <option value="8">FP Mitja</option>
       </select>
+    </div>
+
+    <div>
+      <input name="imatgeAlumne" type="file" accept="img/jpg"/>
     </div>
 
 

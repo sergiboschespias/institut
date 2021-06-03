@@ -11,7 +11,6 @@
                 </i>
             </h1>
 
-
         <p>
             Bon dia , estas en la pàgina web del colegi <b>Es Liceu</b> aqui podras
             cercar informacio sobre el centre i els alumnes del liceu.
