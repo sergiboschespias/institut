@@ -9,6 +9,10 @@ if($_FILES['imatgeAlumne']){
     $path = 'imagenes/alumnes/' . $_GET['DNI'] . '.jpg';
     move_uploaded_file($tmp, $path);
     $updateImg = ", imatgeAlumne = \"$_GET[DNI].jpg\" ";
+}else{
+   
+   return "";
+
 }
 
 $id = $_GET['DNI'];

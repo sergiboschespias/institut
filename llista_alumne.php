@@ -38,14 +38,15 @@
          <tr>
             <th>DNI</th>
             <th>Nom</th>
-            <th>Curs</th>
+            <th>Cognom</th>
             <th>adreca</th>
             <th>codi postal</th>
             <th>telèfon</th>
             <th>naixament</th>
             <th>Curs</th>
             <th>Imatge</th>
-            <th>Opcions</th>
+            <th>Eliminar</th
+            ><th>Opcions</th>
          </tr>
       </thead>
       <tbody>

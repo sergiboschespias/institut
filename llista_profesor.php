@@ -42,6 +42,7 @@
             <th>Cognom</th>
             <th>adreça</th>
             <th>telèfon</th>
+            <th>Eliminar</th>
         
          </tr>
 </thead>

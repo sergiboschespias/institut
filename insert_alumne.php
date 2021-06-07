@@ -8,6 +8,7 @@
   <body style="background-color:LightCyan;">
     <div style="width: 100%; text-align: center">
 
+    
 
     <?php
     $DNI = '';
@@ -86,7 +87,7 @@
 
 
 
-    <button type="submit"  ><b>enviar</b></button>
+    <button type="submit"  ><b>Inscriure</b></button>
     <!--select name="IDCurs">
       <?php
       $query = "SELECT IDCurs, Nom_curs FROM curs ORDER BY IDCurs";

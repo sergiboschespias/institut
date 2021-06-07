@@ -20,6 +20,7 @@
             $telefonv = $_POST["telefon"];
             $cursv=$_POST["Curs"];
             $naixamentv=$_POST["naixament"];
+            $imatgeAlumnev=$_POST["imatgeAlumne"];
             $query="INSERT INTO alumne (DNI,nombre,cognom,adreca,codi_postal,telefon,IDCurs,naixament) VALUES (\"$DNIv\",\"$nombrev\",\"$cognomv\",\"$adrecav\",\"$codi_postalv\",\"$telefonv\",\"$cursv\",\"$naixamentv\");";
             echo $query;
             $res=mysqli_query($bbdd,$query);
