@@ -19,27 +19,38 @@
             En la nova web diseñada per <i>Sergi Bosch i Jordi Mayrata</i> volem una millor estructura de les dades i
             una millor accesibilitat als alumnes.Gràcies.
         </p>
-        <p>
-            <a class="btn btn-primary" href="llista_alumne.php"> Alumnes</a>
-        </p>
-        <p>
-            <a class="btn btn-primary" href="insert_alumne.php"> Nous alumnes </a>
-        </p>
-        <p>
-            <a class="btn btn-primary" href="aula.php"> Aules</a>
-        </p>
-        <p>
-            <a class="btn btn-primary" href="llista_profesor.php"> Profesors</a>
-        </p>
-        <p>
-            <a class="btn btn-primary" href="insert_profesor.php"> Nous profesors</a>
-        </p>
-        <p>
+        
         
         
            
-        </p>
         
+        <div class="container">
+  
+      <ul class="slider">
+        <li id="slide1">
+          <img src="https://www.esliceu.com/wp-content/uploads/2018/05/liceu-870x418.jpg"/>
+        </li>
+        <li id="slide2">
+          <img src="http://cdn.tripeducation.es/img/logos/street/16862.jpg"/>
+        </li>
+        <li id="slide3">
+        <img src="https://www.esliceu.com/wp-content/uploads/2011/02/fotogrup.jpg"/>
+        </li>
+      </ul>
+  
+      <ul class="menu">
+        <li>
+          <a href="#slide1">1</a>
+        </li>
+        <li>
+          <a href="#slide2">2</a>
+        </li>
+        <li>
+          <a href="#slide3">3</a>
+        </li>
+      </ul>
+  
+      </div>
         </div>
         <div style="width: 100%; text-align: center">
         <img src="imagenes/claase.jpg" wdith="300ph" />
