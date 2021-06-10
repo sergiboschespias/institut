@@ -11,7 +11,6 @@
 </head>
 
 
-<body style="background-color:LightCyan;">
 <div style="width: 100%; text-align: center">
 
 

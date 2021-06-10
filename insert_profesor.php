@@ -5,7 +5,6 @@
 <header>
 
 </header>
-<body style="background-color:LightCyan;">
 <div style="width: 100%; text-align: center">
 
 
@@ -14,35 +13,25 @@
 
     <h1>Inscripció nous professors</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
+    
     <div>
-    <label><b> Nom (*obligatori)</b></label>
+    <input type="text" maxlength="120" required name="nombre_profesor" placeholder="Nom" />
     </div>
+    
     <div>
-    <input type="text" maxlength="120" required name="nombre_profesor" placeholder="Escriu aqui el teu nom" />
+    <input type="text" maxlength="100" required name="cognom_profesor" placeholder="Cognom" />
     </div>
+    
     <div>
-    <label><b>Cognom (*obligatori)</b></label>
+      <input type="text" maxlength="100" required name="adreca" placeholder="Adreça" />
     </div>
+    
     <div>
-    <input type="text" maxlength="100" required name="cognom_profesor" placeholder="Escriu aqui el teu cognom" />
+      <input type="text" maxlength="100" required name="telefon" placeholder="Telefon" />
     </div>
+    
     <div>
-      <label><b>Adreça (*obligatori)</b></label>
-      </div>
-    <div>
-      <input type="text" maxlength="100" required name="adreca" placeholder="Escriu aqui la teva adreça" />
-    </div>
-    <div>
-      <label><b>telefon (*obligatori)</b></label>
-      </div>
-    <div>
-      <input type="text" maxlength="100" required name="telefon" placeholder="Escriu aqui el teu telefon" />
-    </div>
-    <div>
-    <label><b>dni (*obligatori)</b></label>
-    </div>
-    <div>
-      <input type="text" maxlength="150" required name="DNI" placeholder="Escriu aqui el teu DNI" />
+      <input type="text" maxlength="150" required name="DNI" placeholder="DNI" />
     </div>
 
 

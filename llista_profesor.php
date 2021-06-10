@@ -11,7 +11,6 @@
 </head>
 
 
-<body style="background-color:LightCyan;">
 <div style="width: 100%; text-align: center">
 
 <h1>Llista de profesors del centre.  <img src="imagenes/claase.jpg" wdith="100ph" style="width: 10%"; text-align: right /></h1>

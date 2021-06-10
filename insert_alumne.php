@@ -5,7 +5,7 @@
   <header>
 
   </header>
-  <body style="background-color:LightCyan;">
+
     <div style="width: 100%; text-align: center">
 
     
@@ -41,49 +41,53 @@
 
     <h1>Inscripció nous alumnes FP</h1>
     <p>Aqui abaix podeu posar les vostres dades per poder inscriurer-vos</p>
+
+     <div>
+        <label><b>Curs</b></label>
+       <select name="Curs">      
+         <option value="1">1r ESO</option>
+         <option value="2">2n ESO</option>
+         <option value="3">3r ESO</option>
+          <option value="4">4t ESO</option>
+          <option value="5">1r Bach</option>
+          <option value="6">2n Bach</option>
+          <option value="7">FP Basic</option>
+          <option value="8">FP Mitja</option>
+        </select>
+     </div>
+    <div>
+      <input type="text" maxlength="120" value="<?=$nombre?>" required name="nombre" placeholder="Nom" />
+    </div>
+    <div>
+      <input type="text" maxlength="100" value="<?=$cognom?>" required name="cognom" placeholder="Cognom" />
+    </div>
+    <div>  
+      <input type="text" maxlength="100" value="<?=$adreca?>" required name="adreca" placeholder="Adreça" />
+    </div>
+    <div>  
+      <input type="text" maxlength="100" value="<?=$codi_postal?>" required name="codi_postal" placeholder="Codi postal" />
+    </div>
   
-    <label><b> Nom </b></label>
-    <input type="text" maxlength="120" value="<?=$nombre?>" required name="nombre" placeholder="Escriu aqui el teu nom" />
-
-    <label><b>Cognom</b></label>
-    <input type="text" maxlength="100" value="<?=$cognom?>" required name="cognom" placeholder="Escriu aqui el teu cognom" />
-    <div>
-      <label><b>Adreça</b></label>
-      <input type="text" maxlength="100" value="<?=$adreca?>" required name="adreca" placeholder="Escriu aqui la teva adreça" />
-      <label><b>Codi postal</b></label>
-      <input type="text" maxlength="100" value="<?=$codi_postal?>" required name="codi_postal" placeholder="Escriu aqui el teu codi postal" />
-    </div>
-    <div>
-      <label><b>telefon</b></label>
-      <input type="text" maxlength="100" value="<?=$telefon?>" required name="telefon" placeholder="Escriu aqui el teu telefon" />
+    <div>  
+      <input type="text" maxlength="100" value="<?=$telefon?>" required name="telefon" placeholder="Telefon" />
     </div>
     
     
-    <label><b>naixament:</b></label>
-
-     <input type="date" name="naixament"
-       value="2018-07-22"
-       min="1900-01-01" max="2090-12-31">
-     
+    
     <div>
-      <label><b>DNI</b></label>
-      <input type="text" maxlength="150" value="<?=$DNI?>"required name="DNI" placeholder="Escriu aqui el teu DNI" />
-      <label><b>Curs</b></label>
-      <select name="Curs">      
-        <option value="1">1r ESO</option>
-        <option value="2">2n ESO</option>
-        <option value="3">3r ESO</option>
-        <option value="4">4t ESO</option>
-        <option value="5">1r Bach</option>
-        <option value="6">2n Bach</option>
-        <option value="7">FP Basic</option>
-        <option value="8">FP Mitja</option>
-      </select>
+    <input type="text" maxlength="150" value="<?=$DNI?>"required name="DNI" placeholder="DNI" />
     </div>
+      <input type="date" name="naixament"
+         value="2018-07-22"
+        min="1900-01-01" max="2090-12-31">
+    <div> 
+    <input name="imatgeAlumne" type="file" accept="img/jpg"/>
 
-    <div>
-      <input name="imatgeAlumne" type="file" accept="img/jpg"/>
     </div>
+   
+
+  
+    
 
 
 
@@ -99,7 +103,7 @@
     </select-->
 
     </form>
-  <div style="width: 100%; text-align: center" >
+    <div style="width: 100%; text-align: center" >
         <img src="imagenes/claase.jpg" wdith="300ph" />
         </div>
 </body>

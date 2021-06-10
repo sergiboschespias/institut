@@ -7,7 +7,6 @@
 
 <body>
 
-<body style="background-color:LightCyan;"> 
 
 <div style="width: 100%; text-align: center">
 <h1>Alumnes del centre <img src="imagenes/claase.jpg" wdith="300ph" />

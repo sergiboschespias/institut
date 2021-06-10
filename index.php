@@ -37,7 +37,7 @@
         <img src="https://www.esliceu.com/wp-content/uploads/2011/02/fotogrup.jpg"/>
         </li>
       </ul>
-  
+     
       <ul class="menu">
         <li>
           <a href="#slide1">1</a>
@@ -52,8 +52,15 @@
   
       </div>
         </div>
-        <div style="width: 100%; text-align: center">
-        <img src="imagenes/claase.jpg" wdith="300ph" />
+        <img src="imagenes/claase.jpg" wdith="300ph" >
+        </img>
+        <div class="background2">
+        <h1>
+          Més Informació
+        </h1>
+
+        <p>Porgramadors:Sergi</p><a href="https://www.instagram.com/__sergibosch__/"> @__sergibosch__
+          </a> 
         </div>
     
     </body>
