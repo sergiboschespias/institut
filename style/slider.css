@@ -71,3 +71,8 @@ body{
   .background2{
     background-color: rgb(211, 200, 157);
   }
+  .box {
+   display:center;
+      display: flex;
+      margin-top: 5px;
+  }
